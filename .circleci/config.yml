@@ -1,15 +1,14 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'twrp-6.0'
-      PBRP_BRANCH: 'features'
-      VERSION: '2.9.0'
+      VERSION: '2.9.1'
       VENDOR: 'LYF'
       CODENAME: 'panda01a'
-      BUILD_LUNCH: 'omni_panda01a-userdebug'
+      BUILD_LUNCH: 'omni_panda01a-eng'
       TEST_BUILD: 'true'
     working_directory: /home/builder/pitchblack
     steps:
