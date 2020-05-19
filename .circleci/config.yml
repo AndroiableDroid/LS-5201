@@ -23,7 +23,7 @@ jobs:
             git config --global color.ui true
             export TEST_BUILD=true
             wget -q https://raw.githubusercontent.com/PitchBlackRecoveryProject/vendor_pb/pb/build.sh
-            sed -i "s:GITHUB_TOKEN@github.com\/PitchBlackRecoveryProject:GITHUB_TOKEN@github.com\/AndroiableDroid:g" build.sh
+            sed -i "s:GITHUB_TOKEN@github.com\/PitchBlackRecoveryProject:GITHUB_TOKEN@github.com\/AndroiableDroid:" build.sh
             source build.sh ${SFUserName} ${SFPassword} ${GITHUB_TOKEN}
 workflows:
   version: 2
